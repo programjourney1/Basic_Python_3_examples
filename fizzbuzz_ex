@@ -1,0 +1,13 @@
+start=1 #prints diviible numbs 3,5,15, and others as normal
+stop=101
+nums= range(start,stop) #could be simplified to; nums= range(1,101)
+list=nums
+for nums in list:
+    if nums%15==0: #comes first, more restrictive
+        print ('Fizzbuzz')
+    elif nums%5==0 :
+        print ('buzz')
+    elif nums%3==0:
+        print('fizz')
+    else:
+        print(nums)
