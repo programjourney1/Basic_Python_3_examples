@@ -1,0 +1,10 @@
+#for loop basic
+# % finds remainder
+
+#finds odd number, identifies even
+list=[1,2,3,4,5]
+for num in list:
+    if num % 2 ==1:
+        print('Odd number')
+    else:
+        print num
