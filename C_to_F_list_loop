@@ -1,0 +1,12 @@
+#list loops
+list=[]
+for element in 'word':
+    list.append(element)
+print(list)
+#or use better way
+list=[element for element in 'word']
+
+#sample C to F calclator
+celsius=[0,10,100.1] #sample numbers
+F=[(temp*(9/5)+32) for temp in celsius] #par is only for order of operations in math
+print F #note action comes before for statement
