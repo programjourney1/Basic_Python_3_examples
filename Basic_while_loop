@@ -1,0 +1,11 @@
+#while loop
+
+x=0
+while x<10:
+    print('x is:'),x
+    x += 1
+    #this will print x+1 until equals ten
+else:
+    print('all done')
+    #break would end loop
+    #continue continues loop
