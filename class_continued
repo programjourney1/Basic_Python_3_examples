@@ -1,0 +1,19 @@
+#method is a function inside a class
+class Circle(object):
+	pi=3.14 #class object attribute, always true inside class
+	def __init__(self, radius=1): #default radius to 1
+		self.radius=radius
+	def diameter(self):
+		return(self.radius*2)
+	def area(self): #method inside class
+		return((self.radius**2)*Circle.pi) #pi*r**, Circle because its inside larger class
+	def set_radius(self, new_radius):
+		self.radius=new_radius #this method sets new radius
+
+c=Circle(radius=10)
+print("current area:",c.area())
+print('current radius:',c.radius)
+c.set_radius(20)
+print('new radius:',c.radius)
+print('new area:',c.area())
+print('new diameter:',c.diameter())
