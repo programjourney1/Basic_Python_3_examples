@@ -1,0 +1,27 @@
+class Animal(object): #__init__ makes the attribute begin. all methods are id by self.
+	Family= 'Mammal' #put before def... to make it apply to all of class
+	def __init__ (self, breed, name, species, adult=True): 
+		self.breed = breed #^< method, looks like a function, but is inside of a class
+		self.name = name #makes pass for name
+		self.species= species
+		self.adult=adult
+Wiskers = Animal(breed='Tabby', name= 'Wiskers', species='Feline', adult=True) #created an instance of Dog
+Emma = Animal(breed= 'Mastiff/Gr. Shep.', name='Emma', species='Canine',adult=True)
+Ellie= Animal(breed= 'Lab/mix', name='Ellie', species='Canine',adult=False)
+print(Emma.name)
+print(Emma.Family) #note no need for parenth after breed. calling instance of Family, larger
+print(Emma.breed)	#shows the larger part of class
+print(Emma.species)
+print('_______')
+print(Wiskers.name)
+print(Wiskers.Family)
+print(Wiskers.breed)
+print(Wiskers.species)
+print('_______')
+print(Ellie.name)
+print(Ellie.Family)
+print(Ellie.breed)
+print(Ellie.species)
+print('_______')
+print('Emma Adult?:',Emma.adult)
+print('Ellie Adult?:',Ellie.adult)
