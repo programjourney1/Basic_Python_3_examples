@@ -1,0 +1,14 @@
+#while loop makes it possible to run same question until valid input is made
+def askint():
+    while True:
+        try:
+            val = int(input("Please enter an integer: "))
+        except:
+            print ("not enter an integer!")
+            continue
+        else: #for when the try does work
+            print ('Integer!')
+            break
+        finally:
+            print ("Finally!")
+        print val
