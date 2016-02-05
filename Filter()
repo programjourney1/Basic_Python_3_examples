@@ -1,0 +1,25 @@
+#filters all true
+def even_check(num):
+    if num % 2 == 0:
+        return True
+    else:
+        print ('false')
+
+even_check(25)
+
+list=[1,2,3,4,5]
+print(filter(even_check, list))#function,seriese(list)
+
+#zip puts things together. makes tuples
+x=[1,2,3]
+y=[4,5,6]
+print (zip(x,y))
+#can be for moe complicated things
+a=[1,2,3,4,5]
+b=[2,2,10,1,1]
+#find largest num in each list
+for pair in zip(a,b):
+    print (max(pair))
+#can  only combine up to the shortest list (then stops)
+# for dictinary only gives keys
+
