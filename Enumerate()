@@ -1,0 +1,13 @@
+#keep a count as you iterate through an object
+l=['a','b','c']
+for count, item in enumerate(l):
+    print(item)
+    print(count)
+
+for i, item in enumerate(l): #count or i or anything
+    if i >=2:
+        break
+    else:
+        print(item)
+
+#enumerate returnes a tuple easy
