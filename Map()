@@ -1,0 +1,16 @@
+#map(function, Sequence)
+#takes function and applies it to everything in sequence
+def fahrenheit(T):
+    return((9.0/5)*T+32)
+temp=[0,22,40,100]
+z= map(fahrenheit,temp)
+print(z)
+#or use it in a lambda
+C=map(lambda T:(9.0/5)*T+32, temp)
+print(C)
+#include miltiple list
+a=[1,2,3]
+b=[4,5,6]
+c=[7,8,9]
+s=map(lambda x,y,z: x+y+z,a,b,c)
+print(s)
