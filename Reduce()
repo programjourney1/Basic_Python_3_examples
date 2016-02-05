@@ -1,0 +1,8 @@
+#reduce(function,sequence)
+#list=[a1,a2,a3,a4,a5...]
+#will apply function to every part of sequence and output one result
+#example: a1+a2
+#then (a1+a2)+a3.....
+lst=[47,11,42,13]
+y=reduce(lambda x,y: x+y,lst)
+print(y)
