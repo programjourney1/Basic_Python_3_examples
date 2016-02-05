@@ -1,0 +1,6 @@
+#used to check booleans
+#all() if all are ture then it returns true
+#any returns true if any are true
+list = [True,True,False,False]
+print(all(list))
+print(any(list))
