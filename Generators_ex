@@ -1,0 +1,31 @@
+#iterator and generator dif.
+#generator functions allow to create function that sends back value and can later resume
+#uses yield statemnet notman iterator functions use return
+#generators become Objects, they can be used over again i.e. XRange()
+#create a generator
+def gencubes(n):
+    for num in range(n):
+        yield num**3
+for x in gencubes(10):
+    print(x)
+
+#other example
+#fibonacci numbers
+def genfibon(n):
+    a=1
+    b=1
+    for i in range (n):
+        yield a
+        t=a
+        a=b
+        b=t+b #or a,b=b,a+b
+for num in genfibon(10):
+    print(num)
+
+def simple_gen():
+    for x in range(3):
+        yield x #yield makes things a generator
+g=simple_gen()
+print(next(g)) #prints the next number in sequence and then stops at limit
+iter() #object, makes iterable objects able to iter
+#like in a string 'hello'. 'h' 'e' ...
