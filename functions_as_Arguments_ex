@@ -1,0 +1,21 @@
+def hello():
+    return ('hi Corey')
+def other(func):
+    print('other code')
+    print func()
+other(hello) #hello inside of other function
+
+#now decorator
+def decorator(func):
+
+    def wrap_func():
+        print('code, before func')
+        func()
+        print('code after func() executed')
+    return(wrap_func)
+def func_needs_dec():
+    print('this function need decorator')
+print(func_needs_dec())
+@new_decorator
+def func_needs_dec():
+    print('this function need decorator2')
