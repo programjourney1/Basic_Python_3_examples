@@ -1,0 +1,10 @@
+#StringIO input/output
+import StringIO
+
+message='This is a string'
+f=StringIO.StringIO(message) #creates file object
+f.read()
+f.seek()
+f.write()
+#convers strings to files
+#great for scrapping Web and reading strings as files
