@@ -1,0 +1,10 @@
+#datetime
+#can add timestamps
+
+import datetime
+time= datetime.time(4,25,1) #hour, min, sec
+print=(time) #prints the time put in
+today= datetime.date.today()
+print(today) #prints date from comp.
+
+
