@@ -1,0 +1,10 @@
+#debugger
+#better than print to find probs
+
+import pdb
+
+pdb.set_trace() #place in code to set ability to debug
+
+#opens up envirnment to find problem
+
+#press q to quit
