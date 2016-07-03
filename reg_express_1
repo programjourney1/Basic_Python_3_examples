@@ -1,0 +1,27 @@
+#regular expressions
+
+import re
+
+patterns=['term1','term2']
+text='this is a string with term1'
+for pattern in pattern:
+    print('searching for pattern in text')%(pattern,text),
+    #checks for match
+
+
+split_term= '@'
+phrase='what is your email, programjourney1.gmailcom?'
+re.split(split_term, phrase) #splits before and after @ symbol
+
+k= re.findall('match','Here is one match, and another match')
+print(k) #prints: ['match','match']
+#add [^ blank] makes exception for blank
+re.findall([^!.? ]+, phrase) # + means to find all the words
+ #can use - to rind range
+#[a-z]+, or can use cap[A-Z]+ !importnace case sensitive!
+#r'\d+'   =  sequence of digits
+#r'\D+' non diget
+#r'\s+' whitespace
+#r'\S+' nonwhitespace
+#r'\w+' alphanumeric characters
+#r'\W+' non alphanumeric characters
