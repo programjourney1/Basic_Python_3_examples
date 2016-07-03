@@ -1,0 +1,12 @@
+#Advanced Numbers, super simple stuff
+
+#hexadecimal format, easy as pie
+hex(246)
+#bunary number, just as easy
+bin(246)
+
+pow(2,4) #same as 2**4   =  2^4
+abs(3.14) #finds absolute value
+round(3.14) #rounds numbers, always at least floaing point num
+#can specify
+round(3.1415,2) #rounds to 2 places
