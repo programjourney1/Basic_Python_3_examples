@@ -1,0 +1,33 @@
+#collection moduals
+
+#counter
+from collections import counter
+L= [1,1,1,2,2,2,2,2,4,54,65,65,7] #can do letters, even letters in sentence
+print= Counter(L)
+# s.split splits sentence by wgitespace seperating words from sentence. so can find counter for word instead of letters
+#call c+= Counter()  removes zero and negative counts
+
+#default dictionary  defaultdict never has keyerror. just uses default (0)
+
+from collections import defaultdict
+
+d=defaultdict(lambda:0) #blanl lambda
+d['one'] #will output 0
+d['two'] =2 #will output {'two':2, 'one':0}
+
+#ordereddict, rembers the order things are put into it
+d= OrderedDict() #does not randomize.
+d['a']=1
+d['b']=2
+d['c']=3
+d['d']=4
+for k,v in d.item():
+    print k,v
+#2 otherwise same dicts are not the same if they are out of sequence. using ordereddict
+
+#NamedTuple, assignes names as well an numbering of tuple
+from collections import namedtuple
+Dog= namedtuple('Dog','age breed name dead') #uses spacesin string
+sam=Dog(age=2,breed='Lab',name='Sam', dead=False)
+sam.age #prints 2
+sam[0] #can call by index instead of fields
