@@ -1,0 +1,19 @@
+#advanced Strings
+s='hello world'
+s.capitalize()
+s.upper()
+s.lower()
+s.count('l')
+s.find('o') #finds first o
+s.split('w') #splits at but does not include w
+s.partition('w') #same as split but includes w
+
+#Advanced Sets
+#set won't take duplicates
+s=set(1,2,3)
+sc= s.copy() #copies set
+sc.add(5)
+s.clear() #erases all
+s.difference(sc) #looks for diff in the 2 sets
+s.intersection(sc) #finds what is the same
+s.union(sc) #anything that is in either
