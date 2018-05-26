@@ -1,0 +1,9 @@
+My_colors= set([green, orange, yellow])
+Her_colors= set([yellow, blue, pink])
+print: My_colors.union(Her_colors) ***shows what is not in common in sets***
+print: My_colors.intersection(Her_colors) ***shows what is in common in sets***
+
+***Quick way***
+
+My_colors|Her_colors
+My_colors & Her_colors
